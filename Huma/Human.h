@@ -10,13 +10,15 @@ public:
 	Human(const char* name, const char* surname, int age);
 	~Human();
 
+
 	char* GetName();
 	char* GetSurname();
 	int GetAge();
 
 
-	void SetName(char* name);
-	void SetSurname(char* surname);
+	void SetName(const char* name);
+	void SetSurname(const char* surname);
 	void SetAge(int age);
-
+	void Print();
+	void Init(const char* name, const char* surname, int age);
 };
